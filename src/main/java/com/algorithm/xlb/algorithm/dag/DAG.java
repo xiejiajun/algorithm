@@ -25,7 +25,14 @@ import java.util.stream.Collectors;
 public final class DAG {
 
 
+  /**
+   * 出度：指向
+   */
   private final LinkedHashSetMultimap outDegree;
+
+  /**
+   * 入度：被指向
+   */
   private final LinkedHashSetMultimap inDegree;
 
   public DAG(final LinkedHashSetMultimap outDegree, final LinkedHashSetMultimap inDegree) {
